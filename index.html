@@ -2,10 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>NeuroField WebGPU</title>
+  <title>NeuroField AI</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- Name Modal -->
+  <div id="modal">
+    <div class="modal-box">
+      <h2>Welcome 👋</h2>
+      <input id="nameInput" placeholder="Enter your name" />
+      <button id="startBtn">Enter</button>
+    </div>
+  </div>
+
+  <!-- HUD -->
+  <div id="hud">
+    <h3 id="greeting">Welcome</h3>
+    <p>🎧 Sound reactive AI</p>
+    <p>🖱️ Move mouse to stimulate</p>
+  </div>
+
   <canvas id="c"></canvas>
   <script type="module" src="main.js"></script>
 </body>
