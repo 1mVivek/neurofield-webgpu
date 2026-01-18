@@ -2,10 +2,70 @@ body {
   margin: 0;
   background: black;
   overflow: hidden;
+  font-family: system-ui;
 }
 
+/* Canvas */
 canvas {
   width: 100vw;
   height: 100vh;
   display: block;
+}
+
+/* HUD */
+#hud {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  color: #7ffcff;
+  background: rgba(0,0,0,0.45);
+  padding: 14px 18px;
+  border: 1px solid rgba(127,252,255,0.3);
+  backdrop-filter: blur(8px);
+  border-radius: 10px;
+  pointer-events: none;
+}
+
+/* Modal */
+#modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.modal-box {
+  background: rgba(10,10,10,0.9);
+  border: 1px solid #7ffcff;
+  padding: 30px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 0 40px rgba(127,252,255,0.3);
+}
+
+.modal-box h2 {
+  color: #7ffcff;
+}
+
+.modal-box input {
+  width: 220px;
+  padding: 10px;
+  margin-top: 15px;
+  background: black;
+  border: 1px solid #7ffcff;
+  color: white;
+  border-radius: 6px;
+}
+
+.modal-box button {
+  margin-top: 15px;
+  padding: 10px 18px;
+  background: #7ffcff;
+  border: none;
+  color: black;
+  border-radius: 6px;
+  cursor: pointer;
 }
